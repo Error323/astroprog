@@ -2,9 +2,11 @@
 Here you can find the most up to date version of the reader for our course.
 More chapters will be made available as the course progresses.
 
-Download the most recent version of the reader [here](20151015-astroprog.pdf) (last updated 2015-10-15).
+Download the most recent version of the reader [here](20160826-astroprog.pdf) (last updated 2016-08-26).
 
 ## Reader change log:
+* 2016-06-09 - Commit slightly cleaned-up source of 2015 reader.
+* 2016-06-06 - Update README.md
 * 2015-09-03 - Uploaded introduction and chapter about BASH.
 * 2015-09-08 - Fixed some typos, added first chapters about Python.
 * 2015-09-10 - Slightly updated version of first assignment
