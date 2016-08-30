@@ -1,4 +1,10 @@
 ## Schedule
 
-* Tuesdays (intro to problem of the week)
-* Thursday (tutorial)
+* Tuesdays
+  - Feedback on previous assignment
+  - Interactive lecture
+  - Intro to new assignment
+
+* Thursday
+  - Work on assignment
+  - Ask Teacher and Assistant for questions
