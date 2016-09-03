@@ -1,8 +1,8 @@
 ## UNIX / Linux
-In this class we will go over some of the basics of the Linux/UNIX command
-line and how to use it. See the reader chapter 2 for preparations, the 
-assignment is available [here](assignment-week-1.pdf) or from chapter 7 of
-the reader. The data files that you need can be downloaded below:
+In this class we will go over some of the basics of the Linux/UNIX command line
+and how to use it. See the reader chapter 2 for preparations, the assignment is
+available from chapter 7 of the reader. The data files that you need can be
+downloaded below:
 
 * [L368884_SAP0_BEAM20.tar.gz](L368884_SAP0_BEAM20.tar.gz)
 * [L368884_SAP0_BEAM21.tar.gz](L368884_SAP0_BEAM21.tar.gz)
