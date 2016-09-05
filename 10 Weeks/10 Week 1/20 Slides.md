@@ -36,7 +36,7 @@ Everything will be done through our website https://astro.mprog.nl/ content will
 be updated regularly. Register now.
 
 ### Grade calculation
-* $6$ Assignments with grades $$a_1, ..., a_6$$
+* $$6$$ Assignments with grades $$a_1, ..., a_6$$
 * Fail/Pass exam $$E \in \{0, 1\}$$
 * Submission deadline every Sunday, penalty $$p_i$$ defined as #days after
 deadline
