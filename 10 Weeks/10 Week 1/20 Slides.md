@@ -1,6 +1,4 @@
-
 # Week 1 - Introduction and Pretest
------------------------------------
 
 ### Who are we - Hi there!
 
@@ -38,9 +36,9 @@ Everything will be done through our website https://astro.mprog.nl/ content will
 be updated regularly. Register now.
 
 ### Grade calculation
-* $6$ Assignments with grades $a_1, ..., a_6$
-* Fail/Pass exam $E \in \{0, 1\}$
-* Submission deadline every Sunday, penalty $p_i$ defined as #days after
+* $6$ Assignments with grades $$a_1, ..., a_6$$
+* Fail/Pass exam $$E \in \{0, 1\}$$
+* Submission deadline every Sunday, penalty $$p_i$$ defined as #days after
 deadline
 * We check on plagiarism across all submissions using various algorithms, don't
 do it
