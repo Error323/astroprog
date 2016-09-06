@@ -34,9 +34,9 @@ Every Tuesday recap on previous assignment, interactive ipython-notebook lecture
 Everything will be done through our website https://astro.mprog.nl/ content will be updated regularly. Register now. The syllabus will be online next week, also available from this website. We will unlock parts of the syllabus weekly that are required together with the appropreate assignments.
 
 ### Grade calculation
-* $6$ Assignments with grades $a_1, ..., a_6$
-* Fail/Pass exam $E \in \{0, 1\}$
-* Submission deadline every Sunday, penalty $p_i$ defined as #days after deadline
+* $$6$$ Assignments with grades $$a_1, ..., a_6$$
+* Fail/Pass exam $$E \in \{0, 1\}$$
+* Submission deadline every Sunday, penalty $$p_i$$ defined as #days after deadline
 * We check on plagiarism across all submissions using various algorithms, don't do it
 * Final grade: $$g = \frac{E}{6} ~ \sum_{i=1}^{6}max(a_i - p_i, 1)$$
 
