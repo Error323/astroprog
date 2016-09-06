@@ -2,6 +2,7 @@
 This course website will be updated regularly.
 
 Questions about the course can be sent to Folkert Huizinga <f.huizinga@uva.nl>
+or Lucia Klarmann <l.a.klarmann@uva.nl>
 
 ## About this website
 The course Basic Linux and Coding for Astronomy and Astrophysics is using a
