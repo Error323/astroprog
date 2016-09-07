@@ -5,4 +5,4 @@ More chapters will be made available as the course progresses.
 Download the most recent version of the reader [here](20160826-astroprog.pdf) (last updated 2016-08-26).
 
 ## Reader change log:
-* 2016-08-26 - Disable all assignments
+* 2016-08-26 - Enable Assignment 1
