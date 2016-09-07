@@ -1,6 +1,4 @@
-
 # Week 1 - Introduction and Pretest
------------------------------------
 
 ### Who are we - Hi there!
 
