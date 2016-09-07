@@ -1,4 +1,4 @@
-## Introduction
+# Introduction
 
 * Quick overview of what we will be doing during the Basic Linux and
   Coding for Astronomy and Astrophysics.
