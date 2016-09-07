@@ -1,8 +1,9 @@
 # UNIX / Linux
 In this class we will go over some of the basics of the Linux/UNIX command line
 and how to use it. See the reader chapter 2 for preparations, the assignment is
-available from chapter 12 of the [reader](reader/reader/20160826.pdf). The data
-files that you need can be downloaded below:
+available from chapter 12 of the
+[reader](https://astro.mprog.nl/reader/reader/20160826.pdf). The data files
+that you need can be downloaded below:
 
 * [L368884_SAP0_BEAM20.tar.gz](L368884_SAP0_BEAM20.tar.gz)
 * [L368884_SAP0_BEAM21.tar.gz](L368884_SAP0_BEAM21.tar.gz)
