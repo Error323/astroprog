@@ -2,8 +2,8 @@
 In this class we will go over some of the basics of the Linux/UNIX command line
 and how to use it. See the reader chapter 2 for preparations, the assignment is
 available from chapter 12 of the
-[reader](https://astro.mprog.nl/reader/reader/20160826.pdf). The data files
-that you need can be downloaded below:
+[reader](https://astro.mprog.nl/course/20%20Reader/10%20Reader/20160907-astroprog.pdf).
+The data files that you need can be downloaded below:
 
 * [L368884_SAP0_BEAM20.tar.gz](L368884_SAP0_BEAM20.tar.gz)
 * [L368884_SAP0_BEAM21.tar.gz](L368884_SAP0_BEAM21.tar.gz)
