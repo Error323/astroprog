@@ -1,4 +1,4 @@
-# Week 1 - Introduction and Pretest
+# Week 1 - Tuesday
 
 ### Who are we - Hi there!
 
@@ -16,7 +16,11 @@ Increasingly important inside and outside Astronomy
 Past fellow students made sure that this course is now mandatory
 
 ### What to expect
-Every Tuesday recap on previous assignment, interactive ipython-notebook lecture/session into new material and handout of new assignments. Every Thursday working through syllabus and homework, Lucia and myself walking around answering questions (Your first advisor and true friend will be a searchengine).
+Every Tuesday recap on previous assignment, interactive ipython-notebook
+lecture/session into new material and handout of new assignments. Every
+Thursday working through syllabus and homework, Lucia and myself walking around
+answering questions (Your first advisor and true friend will be a
+searchengine).
 
   1. Introduction and Pretest
   2. Linux and the commandline (Finding Pulsars)
@@ -29,7 +33,10 @@ Every Tuesday recap on previous assignment, interactive ipython-notebook lecture
  
 
 ### Logistics
-Everything will be done through our website https://astro.mprog.nl/ content will be updated regularly. Register now. The syllabus will be online next week, also available from this website. We will unlock parts of the syllabus weekly that are required together with the appropreate assignments.
+Everything will be done through our website https://astro.mprog.nl/ content
+will be updated regularly. Register now. The syllabus will be online next week,
+also available from this website. We will unlock parts of the syllabus weekly
+that are required together with the appropreate assignments.
 
 ### Grade calculation
 * $$6$$ Assignments with grades $$a_1, ..., a_6$$
@@ -39,13 +46,14 @@ Everything will be done through our website https://astro.mprog.nl/ content will
 * Final grade: $$g = \frac{E}{6} ~ \sum_{i=1}^{6}max(a_i - p_i, 1)$$
 
 ### Pretest
-Gauge current programming skill level. If you pass the pretest, you can opt for an alternative track during this course which will be more challenging and fun. It will also teach you a new concept called *unit testing*. 
+Gauge current programming skill level. If you pass the pretest, you can opt for
+an alternative track during this course which will be more challenging and fun.
+It will also teach you a new concept called *unit testing*. 
 
  * Based on python 2.7 (research and industry standard)
  * In no way affects your final grade
     
-Note however you will be doing a more difficult task for the same type of grade as te regular track. No guts, no glory.
+Note however you will be doing a more difficult task for the same type of grade
+as the regular track. No guts, no glory.
 
 
-### Installation (Homework for Thursday)
-Installing Python and libraries. Own laptop? Linux or Windows? We'll be using the anaconda package for everyone https://www.continuum.io/downloads
