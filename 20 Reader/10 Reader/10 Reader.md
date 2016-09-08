@@ -6,4 +6,4 @@ Download the most recent version of the reader [here](20160907-astroprog.pdf)
 (last updated 2016-09-07).
 
 # Reader change log:
-* 2016-09-07 - Enable Assignment 1
+* 2016-09-07 - All assignments disabled
