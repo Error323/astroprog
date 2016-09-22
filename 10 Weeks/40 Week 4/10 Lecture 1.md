@@ -3,18 +3,7 @@ This week we will look at the basics of program structure. How can you make
 a nice modular program and document it. Make sure you read all the available
 Python chapters.
 
-The homework assignment for group A will be making plots using Berkeley Earth
-data, while the homework for group B will be a bit more advanced.
+For this week's homework, you will be analyzing the Berkeley data further by
+creating plots.
 
-* [Group A](assignment-week-4-group-a.pdf)
-* [Group B](assignment-week-4-group-b.pdf)
-* [Tarball of data files for Group A](datafiles-week-4-group-a.tar.gz)
-* [Tarball of data files for Group B](lotaas-bestprof-files.tar.gz)
-
-## Examples used in class
-
-* [IPython Notebook created in class](examples-week-4.ipynb) (Download, copy
-  to the diretory where you want to work, start IPython Notebook in that 
-  directory, and finally open it.
-* [bad_module.py](bad_module.py) Example of a non-reusable Python module.
-* [nice_module.py](nice_module.py) Example of a reusable Python module.
+* [data](datafiles-week-4.tar.gz)
