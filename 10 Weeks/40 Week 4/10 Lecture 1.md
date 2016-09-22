@@ -4,6 +4,5 @@ a nice modular program and document it. Make sure you read all the available
 Python chapters.
 
 For this week's homework, you will be analyzing the Berkeley data further by
-creating plots.
-
-* [data](datafiles-week-4.tar.gz)
+creating plots. We've created a list of data you can download
+[here](datafiles-week-4.tar.gz)
