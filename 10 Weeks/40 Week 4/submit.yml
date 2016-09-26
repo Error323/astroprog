@@ -1,3 +1,4 @@
 name: wk4
 required:
-    - week4.tar.gz
+    - weather_parser.py
+    - weather_plotter.py
