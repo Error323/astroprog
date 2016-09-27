@@ -2,6 +2,7 @@
 
 import argparse
 import weather_parser as wp
+import glob
 from matplotlib import pyplot as pl
 
 
@@ -52,7 +53,7 @@ def plot_histogram(data, bins):
 def get_configuration():
     """Returns a populated cli configuration"""
     parser = argparse.ArgumentParser()
-    parser.add_argument('files', metavar='FILE', type=argparse.FileType('r'),
+    parser.add_argument('files', metavar='FILE', type=str,
                         nargs='+', help="Files containing Berekley temperature \
                         data, supports glob patterns")
     return parser.parse_args()
@@ -60,21 +61,24 @@ def get_configuration():
 
 if __name__ == "__main__":
     cfg = get_configuration()
-
+    
     filenames = []
-    for f in cfg.files:
-        filenames.append(f.name)
-        f.close()
-    filenames.sort()
+    for pattern in cfg.files:
+        filenames += glob.glob(pattern)
+
+    print "Using {} files".format(len(filenames))
 
     # line plot
     year, anomaly, error = wp.compute_annual_mean(filenames[0])
     plot_line(year, anomaly, error)
+    print "Created line plot"
 
     # scatter plot
     year, _, _, error = wp.parse_as_lists(filenames[0])
     plot_scatter(year, error)
+    print "Created scatter plot"
 
     # histogram plot
     anomaly = wp.collect_at(filenames, 2000, 'Jan')
     plot_histogram(anomaly, 50)
+    print "Created histogram plot"
