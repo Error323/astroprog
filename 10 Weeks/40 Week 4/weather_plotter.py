@@ -5,7 +5,7 @@ import weather_parser as wp
 from matplotlib import pyplot as pl
 
 
-def line_plot(x, y, e):
+def plot_line(x, y, e):
     """Plots y data, its error and saves it as png
 
     Keyword arguments:
@@ -20,7 +20,7 @@ def line_plot(x, y, e):
     pl.close()
 
 
-def scatter_plot(x, y):
+def plot_scatter(x, y):
     """Plots x and y and saves it as png
 
     Keyword arguments:
@@ -35,7 +35,7 @@ def scatter_plot(x, y):
     pl.close()
 
 
-def histogram_plot(data, bins):
+def plot_histogram(data, bins):
     """Plots a histogram of data using a certain number of bins
 
     Keyword arguments:
@@ -69,12 +69,12 @@ if __name__ == "__main__":
 
     # line plot
     year, anomaly, error = wp.compute_annual_mean(filenames[0])
-    line_plot(year, anomaly, error)
+    plot_line(year, anomaly, error)
 
     # scatter plot
     year, _, _, error = wp.parse_as_lists(filenames[0])
-    scatter_plot(year, error)
+    plot_scatter(year, error)
 
     # histogram plot
     anomaly = wp.collect_at(filenames, 2000, 'Jan')
-    histogram_plot(anomaly, 50)
+    plot_histogram(anomaly, 50)

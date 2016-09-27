@@ -48,7 +48,8 @@ def collect_at(filenames, year, month):
     """
     anomaly = []
 
-    # TODO: Write your code here
+    # TODO: Write your code here that collects anomalies for a given year and
+    # month given all files
 
     return anomaly
 
