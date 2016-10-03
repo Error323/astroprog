@@ -17,4 +17,4 @@ For this week's assignment you will be writing a sigmaclipping algorithm and cre
     1. Split up the data into `rows x cols` cells.
     2. For each cell sigma clip `n` standard deviations.
     3. For each sigma clipped cell compute the rms.
-    4. Stores and returns a 2d array of size `rows x cols` containing the rms value per cell.
+    4. Returns a 2d numpy array of size `rows x cols` containing the rms value per cell.
