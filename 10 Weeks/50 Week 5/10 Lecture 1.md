@@ -8,9 +8,9 @@ The subject of the fifth week are arrays. Python itself does not include arrays 
 
 For this week's assignment you will be writing a sigmaclipping algorithm and creating an rms map of an actual fits image from the AARTFAAC project. First examine sigmaclip.py from the [tarball](data.tar.gz). The assignment is divided into three parts.
 
- 1. Write a function `rms(data)` that computes the root-mean squared around the median of the data which is a numpy array. Make sure that the function is robust against NaNs and Infs.
+ 1. Write a function `rms(data)` that computes the root-mean squared of the data which is a numpy array. Make sure that the function is robust against NaNs and Infs.
 
- 2. Write an iterative sigma clipping function `sigmaclip(data, n, m)`.  This function will iterate over the data, each time rejecting data points which lie `n` standard deviations away from the centroid. We define the centroid as the median, but it could also be the mean.  The function should then return a lower- and upperbound such that after at most `m` iterations these bounds are the min and max value of the remaining data. That is, the algorithm can stop iterating if the number of remaining data points between iteration $$i$$ and $$i+1$$ is equal or $$i+1 = m$$. Make sure that the function is robust against NaNs and Infs.
+ 2. Write a sigma clipping function `sigmaclip(data, n, m)`.  This function will iterate over the data, each time rejecting data points which lie `n` standard deviations away from the centroid. We define the centroid as the median, but it could also be the mean.  The function should then return a lower- and upperbound such that after at most `m` iterations these bounds are the min and max value of the remaining data. That is, the algorithm can stop iterating if the number of remaining data points between iteration $$i$$ and $$i+1$$ is equal or $$i+1 = m$$. Make sure that the function is robust against NaNs and Infs.
 
  3. Write a function `rmsmap(data, rows, cols, n, m)` that takes a 2D numpy array as data and performs the following steps:
     
