@@ -9,29 +9,16 @@ from astropy.io import fits
 
 
 def fit_nearest(rmsmap, rows, cols):
-    """Returns a nearest neighbour interpolation of the rmsmap that is rows x cols
+    """Returns a nearest neighbour interpolation of the rmsmap that is rows x
+       cols
 
     Keyword arguments:
     rmsmap -- the 2d rmsmap
     rows -- result rows
     cols -- result columns
     """
-
     nearest = np.zeros((rows, cols))
     return nearest
-
-
-def fit_bilinear(rmsmap, rows, cols):
-    """Returns a bilinear interpolation of the rmsmap that is rows x cols
-
-    Keyword arguments:
-    rmsmap -- the 2d rmsmap
-    rows -- result rows
-    cols -- result columns
-    """
-
-    bilinear = np.zeros((rows, cols))
-    return bilinear
 
 
 def find_islands(data):
@@ -41,7 +28,6 @@ def find_islands(data):
     data -- the 2d data
     """
     islands = []
-
     return islands
 
 if __name__ == "__main__":
@@ -71,19 +57,23 @@ if __name__ == "__main__":
     rms_map = sc.rms_map(data, rms_size, rms_size, sigmas, 100)
     pl.imshow(rms_map, interpolation='nearest')
     pl.colorbar()
-    pl.title('{}x{} RMS Map of `{}\''.format(rms_size, rms_size, img[0].header['OBJECT']))
+    pl.title('{}x{} RMS Map of `{}\''.format(rms_size, rms_size,
+                                             img[0].header['OBJECT']))
     pl.savefig('rmsmap.png', format='png')
     pl.close()
-    
-    # store interpolated rmsmap using nearest neighbour
-    rms_map_bilinear = fit_bilinear(rms_map, shape[0], shape[1])
-    indices = data < rms_map_bilinear*5
-    bilinear = data
-    bilinear[indices] = np.nan
-    pl.imshow(bilinear, interpolation='nearest')
+
+    # store resulting islands map
+    sigmas = 5
+    rms_map_nearest = fit_nearest(rms_map, shape[0], shape[1])
+    indices = data < rms_map_nearest * 5
+    data[indices] = np.nan
+    pl.imshow(data, interpolation='nearest')
     pl.colorbar()
     pl.title('{} above rms'.format(img[0].header['OBJECT']))
-    pl.savefig('bilinear.png', format='png')
+    pl.savefig('data.png', format='png')
     pl.close()
 
-
+    # find islands
+    islands = find_islands(data)
+    for x, y in islands:
+        print "found island at {},{}".format(x, y)

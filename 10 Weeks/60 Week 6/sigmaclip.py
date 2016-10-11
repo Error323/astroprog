@@ -50,7 +50,8 @@ def rms_map(data, rows, cols, n, m):
     size = (data.shape[0]/rows, data.shape[1]/cols)
     for col in range(cols):
         for row in range(rows):
-            cell = data[size[0]*row:size[0]*(row+1), size[1]*col:size[1]*(col+1)]
+            cell = data[size[0]*row:size[0]*(row+1),
+                        size[1]*col:size[1]*(col+1)]
             cell = cell[np.isfinite(cell)]
 
             if cell.size == 0:
@@ -77,14 +78,13 @@ if __name__ == "__main__":
     print " Date:   {}".format(img[0].header['DATE-OBS'])
     print " Size:   {}x{}".format(shape[0], shape[1])
 
-    data = img[0].data[0,0]
+    data = img[0].data[0, 0]
     pl.imshow(data)
     pl.title('{}'.format(img[0].header['OBJECT']))
     pl.colorbar()
     pl.savefig('raw.png', format='png')
     pl.close()
 
-    
     low, high = sigma_clip(data, 2, 10)
     print "\nrms:         {}".format(rms(data))
     print "lower bound: {}".format(low)
@@ -96,7 +96,8 @@ if __name__ == "__main__":
     rmsmap = rms_map(data, rows, cols, 4, 10)
     pl.imshow(rmsmap, interpolation='nearest')
     pl.colorbar()
-    pl.title('{}x{} RMS Map of `{}\''.format(rows, cols, img[0].header['OBJECT']))
+    pl.title('{}x{} RMS Map of `{}\''.format(rows, cols,
+                                             img[0].header['OBJECT']))
     pl.savefig('rmsmap.png', format='png')
     pl.close()
     print "\nSaved image as raw.png"
