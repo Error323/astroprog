@@ -6,11 +6,11 @@ functions.
 
   1. Implement the function `fit_nearest(rmsmap, cols, rows)` that given the
      `rmsmap` returns an interpolated map using nearest neighbour interpolation
-     (see wikipedia/lecture) creates an rmsmap at `cols x rows` resolution.
+     (see wikipedia/lecture) with `cols x rows` resolution.
 
   2. Implement the function `fit_bilinear(rmsmap, cols, rows)` that given the
      `rmsmap` returns an interpolated map using bilinear interpolation (see
-     wikipedia/lecture) creates an rmsmap at `cols x rows` resolution.
+     wikipedia/lecture) with `cols x rows` resolution.
 
   3. After filtering out the noise using our interpolated rmsmap, we will look
      for islands in the remaining data. Implement the function
