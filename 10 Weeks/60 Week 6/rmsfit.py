@@ -9,20 +9,37 @@ from astropy.io import fits
 
 
 def fit_nearest(rmsmap, rows, cols):
+    """Returns a nearest neighbour interpolation of the rmsmap that is rows x cols
+
+    Keyword arguments:
+    rmsmap -- the 2d rmsmap
+    rows -- result rows
+    cols -- result columns
+    """
+
     nearest = np.zeros((rows, cols))
-    size = (rows/rmsmap.shape[0], cols/rmsmap.shape[1])
-    for i in range(cols):
-        for j in range(rows):
-            nearest[i, j] = rmsmap[i/size[0], j/size[1]]
     return nearest
 
 
 def fit_bilinear(rmsmap, rows, cols):
+    """Returns a bilinear interpolation of the rmsmap that is rows x cols
+
+    Keyword arguments:
+    rmsmap -- the 2d rmsmap
+    rows -- result rows
+    cols -- result columns
+    """
+
     bilinear = np.zeros((rows, cols))
     return bilinear
 
 
 def find_islands(data):
+    """Returns a list of tuples containing island center positions
+
+    Keyword arguments:
+    data -- the 2d data
+    """
     islands = []
 
     return islands
@@ -59,14 +76,14 @@ if __name__ == "__main__":
     pl.close()
     
     # store interpolated rmsmap using nearest neighbour
-    rms_map_nearest = fit_nearest(rms_map, shape[0], shape[1])
-    indices = data < rms_map_nearest*2
-    nearest = data
-    nearest[indices] = np.nan
-    pl.imshow(nearest, interpolation='nearest')
+    rms_map_bilinear = fit_bilinear(rms_map, shape[0], shape[1])
+    indices = data < rms_map_bilinear*5
+    bilinear = data
+    bilinear[indices] = np.nan
+    pl.imshow(bilinear, interpolation='nearest')
     pl.colorbar()
     pl.title('{} above rms'.format(img[0].header['OBJECT']))
-    pl.savefig('nearest.png', format='png')
+    pl.savefig('bilinear.png', format='png')
     pl.close()
 
 
