@@ -18,6 +18,7 @@ def fit_nearest(rmsmap, rows, cols):
     cols -- result columns
     """
     nearest = np.zeros((rows, cols))
+    # TODO: Your code here!
     return nearest
 
 
@@ -28,7 +29,9 @@ def find_islands(data):
     data -- the 2d data
     """
     islands = []
+    # TODO: Your code here!
     return islands
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
@@ -65,15 +68,18 @@ if __name__ == "__main__":
     # store resulting islands map
     sigmas = 5
     rms_map_nearest = fit_nearest(rms_map, shape[0], shape[1])
-    indices = data < rms_map_nearest * 5
+    indices = data < rms_map_nearest * sigmas 
     data[indices] = np.nan
     pl.imshow(data, interpolation='nearest')
-    pl.colorbar()
-    pl.title('{} above rms'.format(img[0].header['OBJECT']))
-    pl.savefig('data.png', format='png')
+    pl.title('Islands {} times above rms'.format(sigmas)
+    pl.savefig('islands.png', format='png')
     pl.close()
 
     # find islands
-    islands = find_islands(data)
-    for x, y in islands:
-        print "found island at {},{}".format(x, y)
+    pl.imshow(data)
+    islands = np.array(find_islands(data))
+    pl.axis([0, shape[0], 0, shape[1]])
+    pl.title('Found {} islands'.format(len(islands)))
+    pl.plot(islands[:, 1], islands[:, 0], 'o',
+            color="red", ms=6, mec="red", fillstyle='none')
+    pl.savefig('centers.png', format='png')
