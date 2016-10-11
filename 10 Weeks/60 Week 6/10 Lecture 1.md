@@ -17,4 +17,5 @@ functions.
      `find_islands(data)` that returns a list of positions. Each position is a
      tuple $$(x, y)$$ containing the center position of that island. 
 
-Please download [rmsfit.py](rmsfit.py) and [sigmaclip.py](sigmaclip.py).
+Please download [rmsfit.py](rmsfit.py) and [sigmaclip.py](sigmaclip.py) and
+implement the functions in `rmsfit.py`. Have fun!
