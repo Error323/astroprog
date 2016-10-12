@@ -11,9 +11,9 @@ Please download [rmsfit.py](rmsfit.py) and [sigmaclip.py](sigmaclip.py) and impl
 For finding islands I suggest you use the following approach:
 
   * Create a list of tuples containing valid positions, i.e. positions that contain finite values.
-  * Create a function `expand(pos, used, valid)` that returns all 8 neighbours around `pos` which are `valid` and not `used`
+  * Create a function `expand(pos, used, valid)` that returns all neighbours (max 8) around `pos` which are `valid` and not `used`
   * For each valid position check if a position is used already, otherwise expand until there are no more expansions possible (this is where a while loop is useful)
 
 ![png](islands.png)
 
-The image above shows 3 islands as an example. For each you should compute and store the geometric mean. For grading however, we will not be very strict on where this mean lies exactly. Your mean can differ from the correct mean by 3 pixels.
+The image above shows 3 islands as an example. For each you should compute and store the geometric mean. For grading however, we will not be very strict on where this mean lies exactly. Your mean can differ from the correct mean by ~3 pixels.
