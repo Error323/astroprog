@@ -16,4 +16,4 @@ For finding islands I suggest you use the following approach:
 
 ![png](islands.png)
 
-The image above shows 3 islands as an example. For each you should compute and store the geometric mean. For grading however, we will not be very strict on where this mean lies exactly. Your mean can differ from the correct mean by ~3 pixels.
+The image above shows 3 islands as an example. For each you should compute and store the arithmetic mean. For grading however, we will not be very strict on where this mean lies exactly. Your mean can differ from the correct mean by ~3 pixels.
