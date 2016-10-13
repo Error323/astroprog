@@ -71,7 +71,7 @@ if __name__ == "__main__":
     indices = data < rms_map_nearest * sigmas 
     data[indices] = np.nan
     pl.imshow(data, interpolation='nearest')
-    pl.title('Islands {} times above rms'.format(sigmas)
+    pl.title('Islands {} times above rms'.format(sigmas))
     pl.savefig('islands.png', format='png')
     pl.close()
 
